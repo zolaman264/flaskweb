@@ -1,0 +1,13 @@
+{%extends 'base.html'%}
+{%block content%}
+
+      <div class="container">
+    <h1>About Zelalem</h1>
+    <ul>
+    <p>{% for name in names %}
+        <li>{{name}}</li><br>
+    {%endfor%}</p>
+    </ul>
+</div>
+     
+{%endblock%}

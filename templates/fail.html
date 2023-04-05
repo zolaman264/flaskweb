@@ -1,0 +1,26 @@
+{%extends 'base.html'%}
+{%block content%}
+ 
+
+<div class="container">
+    <h1>Error....</h1>
+    <br>
+    {{error_statement}}
+    <form action="/form" method="POST">
+        <div class="mb-3">
+         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Forst Name" name="first_name" value="{{first_name}}">
+         </div>
+         <div class="mb-3">
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Last Name" name="last_name" value="{{last_name}}">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Address" name="email" value="{{email}}">
+                </div>
+         
+         
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+  </ul>
+</div>
+{%endblock%}
+    
